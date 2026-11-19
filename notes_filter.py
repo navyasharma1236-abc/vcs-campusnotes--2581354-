@@ -5,3 +5,4 @@ def filter_notes_by_tag(notes_list, search_tag):
         return notes_list
     target = search_tag.strip().lower()
     return [note for note in notes_list if note.get('tag') and str(note.get('tag')).strip().lower() == target]
+# Bugfix in search filter
